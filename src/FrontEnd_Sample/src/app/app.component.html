@@ -1,0 +1,40 @@
+<h1>
+  {{title}}
+</h1>
+
+<div>
+  <table border="1">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Gender</th>
+    </tr>
+    <tr *ngFor="let user of userList">
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.gender}}</td>
+    </tr>
+  </table>
+</div>
+
+<hr/><hr/>
+
+<div>
+  <label>First Name</label><input type="text" id="name" [(ngModel)]="firstName">
+  <label>Last Name</label><input type="text" id="last" [(ngModel)]="lastName">
+  <label>Gender</label><input type="text" id="gender" [(ngModel)]="gender">
+  <button type="button" (click)="saveUser()">Save User</button>
+</div>
+
+<hr/>
+
+<div>
+  <label>First Name</label><input type="text" id="name" [(ngModel)]="firstName">
+  <label>Last Name</label><input type="text" id="last" [(ngModel)]="lastName">
+  <label>Gender</label><input type="text" id="gender" [(ngModel)]="gender">
+  <button type="button" (click)="putUser()">Put User</button>
+</div>
+
+<div>
+  <button type="button" (click)="deleteUser()">Delete User</button>
+</div>
