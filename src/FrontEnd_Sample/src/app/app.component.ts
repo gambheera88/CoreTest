@@ -14,18 +14,23 @@ export class AppComponent {
   lastName = "";
   gender = "";
 
+  sumResult: number = 0;
+
   userList: any[] = [];
 
+
+
   constructor(private _appService: AppService) {
-    this.getAllUser();
+    // this.getAllUser();
   }
 
   getAllUser() {
     console.log('res.data');
-    let url = 'http://localhost:50532/api/values';
+    let url = 'http://localhost:50532/api/vaues';
     this._appService.get(url).subscribe(res => {
       console.log(res.json());
       this.userList = res.json();
+      return 1;
     });
   };
 
@@ -65,4 +70,8 @@ export class AppComponent {
       alert("Got it. DELETED");
     });
   };
+
+  sum(a: number, b: number) {
+    this.sumResult = a + b;
+  }
 }
