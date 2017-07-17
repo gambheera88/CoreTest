@@ -46,7 +46,7 @@ describe('AppComponent', () => {
     expect(app.sumResult).toBe(9);
   });
 
-    it('shouls be all users', () => {
+    it('should be all users', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     app.getAllUser();
