@@ -18,40 +18,40 @@ import { HttpModule } from '@angular/http';
 // });
 
 describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-      providers: [AppService],
-      imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule
-      ]
-    }).compileComponents();
-  }));
+  // beforeEach(async(() => {
+  //   TestBed.configureTestingModule({
+  //     declarations: [
+  //       AppComponent
+  //     ],
+  //     providers: [AppService],
+  //     imports: [
+  //       BrowserModule,
+  //       FormsModule,
+  //       HttpModule
+  //     ]
+  //   }).compileComponents();
+  // }));
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  });
+  // it('should create the app', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const app = fixture.debugElement.componentInstance;
+  //   expect(app).toBeTruthy();
+  // });
 
-  // tslint:disable-next-line:no-unused-expression
-  it('shouls be sum', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    app.sum(2, 7);
-    expect(app.sumResult).toBe(9);
-  });
+  // // tslint:disable-next-line:no-unused-expression
+  // it('shouls be sum', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const app = fixture.debugElement.componentInstance;
+  //   app.sum(2, 7);
+  //   expect(app.sumResult).toBe(9);
+  // });
 
-    it('should be all users', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    app.getAllUser();
-    expect(app.userList.length).toBeGreaterThanOrEqual(0);
-  });
+  //   it('should be all users', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   const app = fixture.debugElement.componentInstance;
+  //   app.getAllUser();
+  //   expect(app.userList.length).toBeGreaterThanOrEqual(0);
+  // });
 
   //   // tslint:disable-next-line:no-unused-expression
   //   it('shouls be save users'), (() => {
