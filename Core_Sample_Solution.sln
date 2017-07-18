@@ -34,6 +34,10 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FrontEnd_Sample", "src\Fron
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CF50F5DF-BD5E-463B-8549-B6DDC3016290}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "unitTests", "test\unitTests\unitTests.xproj", "{4CF2EA13-34D3-4620-B290-88F268521BAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,9 +49,12 @@ Global
 		{28D84060-F786-4718-8D75-C63B955D4A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28D84060-F786-4718-8D75-C63B955D4A44}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3D367D3-9976-484E-A54D-C41434B5230D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3D367D3-9976-484E-A54D-C41434B5230D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3D367D3-9976-484E-A54D-C41434B5230D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3D367D3-9976-484E-A54D-C41434B5230D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4CF2EA13-34D3-4620-B290-88F268521BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF2EA13-34D3-4620-B290-88F268521BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF2EA13-34D3-4620-B290-88F268521BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF2EA13-34D3-4620-B290-88F268521BAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +62,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{28D84060-F786-4718-8D75-C63B955D4A44} = {AA7EBB26-4360-40C2-9751-486B42537C41}
 		{A3D367D3-9976-484E-A54D-C41434B5230D} = {AA7EBB26-4360-40C2-9751-486B42537C41}
+		{4CF2EA13-34D3-4620-B290-88F268521BAF} = {CF50F5DF-BD5E-463B-8549-B6DDC3016290}
 	EndGlobalSection
 EndGlobal

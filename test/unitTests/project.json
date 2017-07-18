@@ -1,0 +1,19 @@
+﻿{
+  "version": "1.0.0-*",
+  "testRunner": "xunit",
+  "dependencies": {
+    "Core_Sample": "1.0.0-*",
+    "Microsoft.Extensions.Testing.Abstractions": "1.0.0-preview2-003121",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    },
+    "xunit": "2.2.0"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}
